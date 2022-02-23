@@ -10,13 +10,6 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 class ProjectFactory extends Factory
 {
     /**
-     * The name of the factory's corresponding model.
-     *
-     * @var string
-     */
-    protected $model = Company::class;
-
-    /**
      * Define the model's default state.
      *
      * @return array<string, mixed>
@@ -26,7 +19,7 @@ class ProjectFactory extends Factory
         return [
             'city_id' => $this->faker->numberBetween(1, 30),
             'company_id' => $this->faker->numberBetween(1, 30),
-            'user_id' => $this->faker->numberBetween(1, 30),
+            'user_id' => $this->faker->numberBetween(1, 3),
             'name' => $this->faker->sentence(),
             'execution_date' => $this->faker->date(),
             'is_active' => $this->faker->boolean()
