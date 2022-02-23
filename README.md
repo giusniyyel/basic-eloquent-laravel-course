@@ -7,7 +7,7 @@ Gracias al contenido del curso se logra aprender a configurar modelos del Object
 
 > 📘 Info
 >
-> Revisar commits para obtener información acerca de las actividades realizadas.
+> Revisar [commits](commits/master) para obtener información acerca de las actividades realizadas.
 
 ---
 Typed with ❤️ by [Daniel Campos](https://github.com/giusniyyel) 😊
