@@ -20,6 +20,7 @@ Route::get('/', function () {
 });
 
 Route::get('projects', [App\Http\Controllers\ProjectController::class, 'getAllProjects']);
+Route::get('activeProjects', [App\Http\Controllers\ProjectController::class, 'getActiveProjects']);
 Route::get('insertProject', [App\Http\Controllers\ProjectController::class, 'insertProject']);
 Route::get('updateProject', [App\Http\Controllers\ProjectController::class, 'updateProject']);
 Route::get('updateProjects', [App\Http\Controllers\ProjectController::class, 'updateAllInactiveProjects']);

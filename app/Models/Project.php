@@ -24,6 +24,17 @@ class Project extends Model
     ];
 
     /**
+     * Scope a query to only include active users.
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder  $query
+     * @return void
+     */
+    public function scopeActive($query)
+    {
+        $query->where('is_active', 1);
+    }
+
+    /**
      * Prepare a date for array / JSON serialization.
      *
      * @param  \DateTimeInterface  $date

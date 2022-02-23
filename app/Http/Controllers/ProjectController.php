@@ -12,6 +12,12 @@ class ProjectController extends Controller
         return $projects;
     }
 
+    public function getActiveProjects() {
+        $projects = Project::active()->get();
+
+        return $projects;
+    }
+
     public function insertProject() {
         $project = Project::create([
             'city_id' => 1,
