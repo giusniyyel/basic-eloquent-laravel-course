@@ -12,7 +12,7 @@ class Project extends Model
 
     //table projects
     protected $table = 'projects';
-    protected $primaryKey = 'project_id';
+    protected $primaryKey = 'id';
 
     protected $fillable = [
         'city_id',
